@@ -20,6 +20,7 @@ pub enum NavAction {
 
 pub struct AnimeLibApp {
     pub hwnd: Option<isize>,
+    pub child_hwnd: Option<isize>,
     rt: Arc<Runtime>,
     api_client: Arc<ApiClient>,
     image_cache: Arc<Mutex<ImageCache>>,
@@ -39,6 +40,7 @@ impl AnimeLibApp {
 
         Self {
             hwnd: None,
+            child_hwnd: None,
             rt,
             api_client,
             image_cache,
@@ -79,7 +81,25 @@ impl eframe::App for AnimeLibApp {
                 use raw_window_handle::{HasWindowHandle, RawWindowHandle};
                 if let Ok(handle) = _frame.window_handle() {
                     if let RawWindowHandle::Win32(win32) = handle.as_raw() {
-                        self.hwnd = Some(win32.hwnd.get() as isize);
+                        let parent = win32.hwnd.get() as isize;
+                        self.hwnd = Some(parent);
+                        
+                        use windows_sys::Win32::UI::WindowsAndMessaging::{CreateWindowExW, WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, WS_CLIPSIBLINGS};
+                        let class_name: Vec<u16> = "STATIC\0".encode_utf16().collect();
+                        unsafe {
+                            let child = CreateWindowExW(
+                                0,
+                                class_name.as_ptr(),
+                                std::ptr::null(),
+                                WS_CHILD | WS_VISIBLE | WS_CLIPCHILDREN | WS_CLIPSIBLINGS,
+                                0, 0, 800, 600, // Will be resized later
+                                parent as _,
+                                std::ptr::null_mut(),
+                                std::ptr::null_mut(),
+                                std::ptr::null_mut(),
+                            );
+                            self.child_hwnd = Some(child as isize);
+                        }
                     }
                 }
             }
@@ -129,7 +149,7 @@ impl eframe::App for AnimeLibApp {
                             self.image_cache.clone(),
                             &mut nav_action,
                             self.rt.clone(),
-                            self.hwnd,
+                            self.child_hwnd,
                         );
                     }
                 }

@@ -39,6 +39,24 @@ pub fn launch_mpv(url: &str, fallback_site_url: &str, hwnd: Option<isize>) -> Op
             // Also it's often good to set no window border and auto-fit if embedded
             cmd.arg("--no-border");
             cmd.arg("--keep-open=yes"); // keep player open after video ends
+            
+            // Apply ModernX UI skin
+            cmd.arg("--osc=no"); // Disable default OSC
+            if let Ok(cwd) = std::env::current_dir() {
+                let assets_dir = cwd.join("assets");
+                cmd.arg(format!("--config-dir={}", assets_dir.display()));
+                
+                let script_path = assets_dir.join("modernx.lua");
+                if script_path.exists() {
+                    cmd.arg(format!("--script={}", script_path.display()));
+                } else {
+                    log::warn!("ModernX script not found at {}", script_path.display());
+                }
+            }
+            
+            // Allow input explicitly (some MPV versions need this when embedded)
+            cmd.arg("--input-default-bindings=yes");
+            cmd.arg("--input-vo-keyboard=yes");
         }
 
         let result = cmd.spawn();

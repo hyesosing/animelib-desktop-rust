@@ -87,21 +87,50 @@ impl AnimePageScreen {
         }
         
         if is_playing {
-            ui.centered_and_justified(|ui| {
-                ui.vertical_centered(|ui| {
-                    ui.add_space(50.0);
-                    ui.heading("Плеер запущен");
-                    ui.add_space(20.0);
-                    if ui.button("Остановить видео").clicked() {
+            let available_rect = ui.available_rect_before_wrap();
+            let response = ui.allocate_rect(available_rect, egui::Sense::hover());
+            let rect = response.rect;
+            
+            if let Some(h) = hwnd {
+                #[cfg(target_os = "windows")]
+                {
+                    use windows_sys::Win32::UI::WindowsAndMessaging::{SetWindowPos, SWP_NOZORDER, SWP_SHOWWINDOW};
+                    unsafe {
+                        SetWindowPos(
+                            h as _,
+                            std::ptr::null_mut(),
+                            rect.min.x as i32,
+                            rect.min.y as i32,
+                            rect.width() as i32,
+                            rect.height() as i32,
+                            SWP_NOZORDER | SWP_SHOWWINDOW,
+                        );
+                    }
+                }
+            }
+
+            // Still show a tiny close button overlay at the top left just in case
+            ui.put(
+                egui::Rect::from_min_size(rect.min + egui::vec2(10.0, 10.0), egui::vec2(120.0, 30.0)),
+                |ui: &mut egui::Ui| {
+                    if ui.button("⏹ Закрыть плеер").clicked() {
                         if let Ok(mut lock) = self.player_process.lock() {
                             if let Some(mut child) = lock.take() {
                                 let _ = child.kill();
                                 let _ = child.wait();
+                                
+                                // Hide the window
+                                #[cfg(target_os = "windows")]
+                                if let Some(h) = hwnd {
+                                    use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_HIDE};
+                                    unsafe { ShowWindow(h as _, SW_HIDE); }
+                                }
                             }
                         }
                     }
-                });
-            });
+                    ui.allocate_response(ui.available_size(), egui::Sense::hover())
+                }
+            );
             return;
         }
 
