@@ -1,0 +1,395 @@
+{
+  "data": [
+    {
+      "id": 112321,
+      "model": "episodes",
+      "name": "Скрытый дар",
+      "number": "1",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-07-05T07:55:13.000000Z",
+      "item_number": 1,
+      "type": "episodes"
+    },
+    {
+      "id": 112500,
+      "model": "episodes",
+      "name": "Скрытый дар 2",
+      "number": "2",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-07-13T17:26:05.000000Z",
+      "item_number": 2,
+      "type": "episodes"
+    },
+    {
+      "id": 112646,
+      "model": "episodes",
+      "name": "Скрытый дар 3",
+      "number": "3",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-07-20T17:17:13.000000Z",
+      "item_number": 3,
+      "type": "episodes"
+    },
+    {
+      "id": 112763,
+      "model": "episodes",
+      "name": "Скрытый дар 4",
+      "number": "4",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-07-27T17:50:37.000000Z",
+      "item_number": 4,
+      "type": "episodes"
+    },
+    {
+      "id": 112932,
+      "model": "episodes",
+      "name": "Преждевременная смерть",
+      "number": "5",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-08-03T18:02:16.000000Z",
+      "item_number": 5,
+      "type": "episodes"
+    },
+    {
+      "id": 113643,
+      "model": "episodes",
+      "name": "Такие дела",
+      "number": "6",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-08-31T17:35:59.000000Z",
+      "item_number": 6,
+      "type": "episodes"
+    },
+    {
+      "id": 113748,
+      "model": "episodes",
+      "name": "Маленький праздник",
+      "number": "7",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-09-07T17:30:43.000000Z",
+      "item_number": 7,
+      "type": "episodes"
+    },
+    {
+      "id": 113849,
+      "model": "episodes",
+      "name": "Инцидент в Сибуе",
+      "number": "8",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-09-14T17:48:55.000000Z",
+      "item_number": 8,
+      "type": "episodes"
+    },
+    {
+      "id": 113977,
+      "model": "episodes",
+      "name": "Инцидент в Сибуе: Врата открываются",
+      "number": "9",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-09-21T18:06:13.000000Z",
+      "item_number": 9,
+      "type": "episodes"
+    },
+    {
+      "id": 114104,
+      "model": "episodes",
+      "name": "Хаос",
+      "number": "10",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-09-28T18:05:58.000000Z",
+      "item_number": 10,
+      "type": "episodes"
+    },
+    {
+      "id": 114473,
+      "model": "episodes",
+      "name": "Призыв духа",
+      "number": "11",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-10-05T18:01:16.000000Z",
+      "item_number": 11,
+      "type": "episodes"
+    },
+    {
+      "id": 114687,
+      "model": "episodes",
+      "name": "Тупой нож",
+      "number": "12",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-10-12T18:05:08.000000Z",
+      "item_number": 12,
+      "type": "episodes"
+    },
+    {
+      "id": 115392,
+      "model": "episodes",
+      "name": "Красная чешуя",
+      "number": "13",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-10-19T17:11:51.000000Z",
+      "item_number": 13,
+      "type": "episodes"
+    },
+    {
+      "id": 115518,
+      "model": "episodes",
+      "name": "Колебания",
+      "number": "14",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-10-26T17:48:04.000000Z",
+      "item_number": 14,
+      "type": "episodes"
+    },
+    {
+      "id": 115651,
+      "model": "episodes",
+      "name": "Колебания 2",
+      "number": "15",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-11-02T18:07:51.000000Z",
+      "item_number": 15,
+      "type": "episodes"
+    },
+    {
+      "id": 115763,
+      "model": "episodes",
+      "name": "Раскаты грома",
+      "number": "16",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-11-09T18:04:53.000000Z",
+      "item_number": 16,
+      "type": "episodes"
+    },
+    {
+      "id": 115890,
+      "model": "episodes",
+      "name": "Раскаты грома 2",
+      "number": "17",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-11-16T18:05:03.000000Z",
+      "item_number": 17,
+      "type": "episodes"
+    },
+    {
+      "id": 116115,
+      "model": "episodes",
+      "name": "Правота",
+      "number": "18",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-11-23T18:04:40.000000Z",
+      "item_number": 18,
+      "type": "episodes"
+    },
+    {
+      "id": 116226,
+      "model": "episodes",
+      "name": "Правота 2",
+      "number": "19",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-11-30T18:05:19.000000Z",
+      "item_number": 19,
+      "type": "episodes"
+    },
+    {
+      "id": 116364,
+      "model": "episodes",
+      "name": "Правота 3",
+      "number": "20",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-12-07T18:05:58.000000Z",
+      "item_number": 20,
+      "type": "episodes"
+    },
+    {
+      "id": 116468,
+      "model": "episodes",
+      "name": "Метаморфозы",
+      "number": "21",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-12-14T17:43:59.000000Z",
+      "item_number": 21,
+      "type": "episodes"
+    },
+    {
+      "id": 116607,
+      "model": "episodes",
+      "name": "Метаморфозы 2",
+      "number": "22",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-12-21T18:05:35.000000Z",
+      "item_number": 22,
+      "type": "episodes"
+    },
+    {
+      "id": 116769,
+      "model": "episodes",
+      "name": "Инцидент в Сибуе: Врата закрываются",
+      "number": "23",
+      "number_secondary": "2",
+      "season": "2",
+      "status": {
+        "id": "default",
+        "label": "Полноценный эпизод",
+        "abbr": null
+      },
+      "anime_id": 19783,
+      "created_at": "2023-12-28T18:05:06.000000Z",
+      "item_number": 23,
+      "type": "episodes"
+    }
+  ]
+}

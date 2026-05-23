@@ -1,0 +1,1493 @@
+{
+  "data": {
+    "id": 19783,
+    "name": "Jujutsu Kaisen 2nd Season",
+    "rus_name": "Магическая битва 2",
+    "eng_name": "Jujutsu Kaisen Season 2",
+    "otherNames": [
+      "JJK",
+      "Jujutsu Kaisen S2",
+      "Sorcery Fight",
+      "呪術廻戦",
+      "呪術廻戦 懐玉・玉折／渋谷事変"
+    ],
+    "model": "anime",
+    "slug": "jujutsu-kaisen-2nd-season-anime",
+    "slug_url": "19783--jujutsu-kaisen-2nd-season-anime",
+    "cover": {
+      "filename": "8b499db0-867b-45b7-b997-17f4af3b3702",
+      "thumbnail": "https://cover.imglib.info/uploads/anime/19783/cover/8b499db0-867b-45b7-b997-17f4af3b3702_thumb.jpg",
+      "default": "https://cover.imglib.info/uploads/anime/19783/cover/8b499db0-867b-45b7-b997-17f4af3b3702.jpg",
+      "md": "https://cover.imglib.info/uploads/anime/19783/cover/8b499db0-867b-45b7-b997-17f4af3b3702.jpg"
+    },
+    "ageRestriction": {
+      "id": 3,
+      "label": "R-17"
+    },
+    "site": 5,
+    "type": {
+      "id": 16,
+      "label": "TV Сериал"
+    },
+    "summary": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Тридцать первое октября 2018 года, район Сибуя. Множество простых людей заключены под магической завесой и взяты в заложники союзом проклятых духов под началом Махито и Гэто. Всех гражданских обещают выпустить невредимыми только с одним условием: сильнейший маг современности, Сатору Годзё, должен явиться в Сибую и принять бой.Ученики и преподаватели Магического техникума разбиваются на группы, чтобы быстрее эвакуировать мирных жителей перед началом масштабной битвы. Сам Сатору Годзё прибывает на место действия и отправляется прямиком к станции. События развиваются согласно плану Сугуру Гэто."
+            }
+          ]
+        }
+      ]
+    },
+    "releaseDate": "2023-07-06",
+    "views": {
+      "total": 576237,
+      "short": "576.2 K",
+      "formated": "576 237"
+    },
+    "rating": {
+      "average": "9.13",
+      "averageFormated": "9.1",
+      "votes": 8268,
+      "votesFormated": "8.3 K",
+      "user": 0
+    },
+    "is_licensed": false,
+    "moderated": {
+      "id": 1,
+      "label": "Принято модерацией"
+    },
+    "teams": [
+      {
+        "id": 1190,
+        "slug": "aniplague",
+        "slug_url": "1190--aniplague",
+        "model": "team",
+        "name": "AniPlague",
+        "cover": {
+          "filename": "Z0qXDsBB1iKO",
+          "thumbnail": "https://cover.imglib.info/uploads/team/aniplague/cover/Z0qXDsBB1iKO_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/aniplague/cover/Z0qXDsBB1iKO_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/aniplague/cover/Z0qXDsBB1iKO_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32411,
+        "slug": "amazing-dubbing",
+        "slug_url": "32411--amazing-dubbing",
+        "model": "team",
+        "name": "Amazing Dubbing",
+        "cover": {
+          "filename": "OtasLBYa2wwq",
+          "thumbnail": "https://cover.imglib.info/uploads/team/amazing-dubbing/cover/OtasLBYa2wwq_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/amazing-dubbing/cover/OtasLBYa2wwq_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/amazing-dubbing/cover/OtasLBYa2wwq_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32412,
+        "slug": "anilibriatv",
+        "slug_url": "32412--anilibriatv",
+        "model": "team",
+        "name": "AniLibria.TV",
+        "cover": {
+          "filename": "1uvIOD0GdE10",
+          "thumbnail": "https://cover.imglib.info/uploads/team/anilibriatv/cover/1uvIOD0GdE10_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/anilibriatv/cover/1uvIOD0GdE10_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/anilibriatv/cover/1uvIOD0GdE10_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32414,
+        "slug": "shiza-project",
+        "slug_url": "32414--shiza-project",
+        "model": "team",
+        "name": "SHIZA Project",
+        "cover": {
+          "filename": "P04dKV9auVUz",
+          "thumbnail": "https://cover.imglib.info/uploads/team/shiza-project/cover/P04dKV9auVUz_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/shiza-project/cover/P04dKV9auVUz_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/shiza-project/cover/P04dKV9auVUz_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32416,
+        "slug": "anidub",
+        "slug_url": "32416--anidub",
+        "model": "team",
+        "name": "AniDUB",
+        "cover": {
+          "filename": "LTBrGQxUKaE3",
+          "thumbnail": "https://cover.imglib.info/uploads/team/anidub/cover/LTBrGQxUKaE3_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/anidub/cover/LTBrGQxUKaE3_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/anidub/cover/LTBrGQxUKaE3_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32434,
+        "slug": "komnata-didi",
+        "slug_url": "32434--komnata-didi",
+        "model": "team",
+        "name": "КОМНАТА ДИДИ",
+        "cover": {
+          "filename": "8e75ea4c-0f6a-4279-92a9-f076d0829ac7",
+          "thumbnail": "https://cover.imglib.info/uploads/team/32434/cover/8e75ea4c-0f6a-4279-92a9-f076d0829ac7_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/32434/cover/8e75ea4c-0f6a-4279-92a9-f076d0829ac7.jpg",
+          "md": "https://cover.imglib.info/uploads/team/32434/cover/8e75ea4c-0f6a-4279-92a9-f076d0829ac7.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32435,
+        "slug": "studio-band",
+        "slug_url": "32435--studio-band",
+        "model": "team",
+        "name": "Studio Band",
+        "cover": {
+          "filename": "zNRbrVzDmU6A",
+          "thumbnail": "https://cover.imglib.info/uploads/team/studio-band/cover/zNRbrVzDmU6A_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/studio-band/cover/zNRbrVzDmU6A_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/studio-band/cover/zNRbrVzDmU6A_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32436,
+        "slug": "jisedai",
+        "slug_url": "32436--jisedai",
+        "model": "team",
+        "name": "Jisedai",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32437,
+        "slug": "anistar",
+        "slug_url": "32437--anistar",
+        "model": "team",
+        "name": "AniStar",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32439,
+        "slug": "rise-i-voices",
+        "slug_url": "32439--rise-i-voices",
+        "model": "team",
+        "name": "RISE I voices",
+        "cover": {
+          "filename": "643b1c1a-6faa-48e3-a7e2-45464bbc095b",
+          "thumbnail": "https://cover.imglib.info/uploads/team/32439/cover/643b1c1a-6faa-48e3-a7e2-45464bbc095b_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/32439/cover/643b1c1a-6faa-48e3-a7e2-45464bbc095b.jpg",
+          "md": "https://cover.imglib.info/uploads/team/32439/cover/643b1c1a-6faa-48e3-a7e2-45464bbc095b.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32443,
+        "slug": "dublirovannyi",
+        "slug_url": "32443--dublirovannyi",
+        "model": "team",
+        "name": "Дублированный",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32468,
+        "slug": "force-media",
+        "slug_url": "32468--force-media",
+        "model": "team",
+        "name": "Force Media",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32482,
+        "slug": "dubclub",
+        "slug_url": "32482--dubclub",
+        "model": "team",
+        "name": "DubClub",
+        "cover": {
+          "filename": "qUgzn8OZhfwP",
+          "thumbnail": "https://cover.imglib.info/uploads/team/dubclub/cover/qUgzn8OZhfwP_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/dubclub/cover/qUgzn8OZhfwP_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/dubclub/cover/qUgzn8OZhfwP_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32483,
+        "slug": "jam",
+        "slug_url": "32483--jam",
+        "model": "team",
+        "name": "JAM",
+        "cover": {
+          "filename": "Am07UWvVanz2",
+          "thumbnail": "https://cover.imglib.info/uploads/team/jam/cover/Am07UWvVanz2_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/jam/cover/Am07UWvVanz2_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/jam/cover/Am07UWvVanz2_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32489,
+        "slug": "anifilm",
+        "slug_url": "32489--anifilm",
+        "model": "team",
+        "name": "AniFilm",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32642,
+        "slug": "fumodub",
+        "slug_url": "32642--fumodub",
+        "model": "team",
+        "name": "FumoDub",
+        "cover": {
+          "filename": "JHpMpIx9UqZs",
+          "thumbnail": "https://cover.imglib.info/uploads/team/fumodub/cover/JHpMpIx9UqZs_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/fumodub/cover/JHpMpIx9UqZs_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/fumodub/cover/JHpMpIx9UqZs_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32713,
+        "slug": "crunchyrollsubtitles",
+        "slug_url": "32713--crunchyrollsubtitles",
+        "model": "team",
+        "name": "Crunchyroll.Subtitles",
+        "cover": {
+          "filename": "iMDzIVhDpwvy",
+          "thumbnail": "https://cover.imglib.info/uploads/team/crunchyrollsubtitles/cover/iMDzIVhDpwvy_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/crunchyrollsubtitles/cover/iMDzIVhDpwvy_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/crunchyrollsubtitles/cover/iMDzIVhDpwvy_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 1,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32857,
+        "slug": "freedubstudio",
+        "slug_url": "32857--freedubstudio",
+        "model": "team",
+        "name": "FreedubStudio",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32974,
+        "slug": "tvshows",
+        "slug_url": "32974--tvshows",
+        "model": "team",
+        "name": "TVShows",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32980,
+        "slug": "haronmedia",
+        "slug_url": "32980--haronmedia",
+        "model": "team",
+        "name": "HaronMedia",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 32987,
+        "slug": "animevost",
+        "slug_url": "32987--animevost",
+        "model": "team",
+        "name": "AnimeVost",
+        "cover": {
+          "filename": "o5jQ7ZJ5HVcb",
+          "thumbnail": "https://cover.imglib.info/uploads/team/animevost/cover/o5jQ7ZJ5HVcb_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/animevost/cover/o5jQ7ZJ5HVcb_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/animevost/cover/o5jQ7ZJ5HVcb_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 33008,
+        "slug": "crunchyroll",
+        "slug_url": "33008--crunchyroll",
+        "model": "team",
+        "name": "Crunchyroll",
+        "cover": {
+          "filename": "DNtqFCJRwwCk",
+          "thumbnail": "https://cover.imglib.info/uploads/team/crunchyroll/cover/DNtqFCJRwwCk_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/crunchyroll/cover/DNtqFCJRwwCk_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/crunchyroll/cover/DNtqFCJRwwCk_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 33065,
+        "slug": "onwave",
+        "slug_url": "33065--onwave",
+        "model": "team",
+        "name": "OnWave",
+        "cover": {
+          "filename": "313c39d6-4ab1-467f-8726-0455ad6cfd54",
+          "thumbnail": "https://cover.imglib.info/uploads/team/33065/cover/313c39d6-4ab1-467f-8726-0455ad6cfd54_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/33065/cover/313c39d6-4ab1-467f-8726-0455ad6cfd54.jpg",
+          "md": "https://cover.imglib.info/uploads/team/33065/cover/313c39d6-4ab1-467f-8726-0455ad6cfd54.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 33139,
+        "slug": "dream-cast",
+        "slug_url": "33139--dream-cast",
+        "model": "team",
+        "name": "Dream Cast",
+        "cover": {
+          "filename": "e065d05f-27b8-41ce-ba18-93ea6d13edec",
+          "thumbnail": "https://cover.imglib.info/uploads/team/33139/cover/e065d05f-27b8-41ce-ba18-93ea6d13edec_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/33139/cover/e065d05f-27b8-41ce-ba18-93ea6d13edec.jpg",
+          "md": "https://cover.imglib.info/uploads/team/33139/cover/e065d05f-27b8-41ce-ba18-93ea6d13edec.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 33146,
+        "slug": "calliopehouse",
+        "slug_url": "33146--calliopehouse",
+        "model": "team",
+        "name": "CalliopeHouse",
+        "cover": {
+          "filename": "889955b9-c1fb-4c69-8ec4-83cd6a0d750b",
+          "thumbnail": "https://cover.imglib.info/uploads/team/33146/cover/889955b9-c1fb-4c69-8ec4-83cd6a0d750b_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/33146/cover/889955b9-c1fb-4c69-8ec4-83cd6a0d750b.jpg",
+          "md": "https://cover.imglib.info/uploads/team/33146/cover/889955b9-c1fb-4c69-8ec4-83cd6a0d750b.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 33233,
+        "slug": "anirisesubtitles",
+        "slug_url": "33233--anirisesubtitles",
+        "model": "team",
+        "name": "AniRise.Subtitles",
+        "cover": {
+          "filename": "WYq69P2eqzJH",
+          "thumbnail": "https://cover.imglib.info/uploads/team/anirisesubtitles/cover/WYq69P2eqzJH_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/anirisesubtitles/cover/WYq69P2eqzJH_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/anirisesubtitles/cover/WYq69P2eqzJH_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 1,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 33285,
+        "slug": "anileaguetv",
+        "slug_url": "33285--anileaguetv",
+        "model": "team",
+        "name": "AniLeague.tv",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 33293,
+        "slug": "anigazm",
+        "slug_url": "33293--anigazm",
+        "model": "team",
+        "name": "ANIGAZM",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 33294,
+        "slug": "youkai-studio",
+        "slug_url": "33294--youkai-studio",
+        "model": "team",
+        "name": "Youkai Studio",
+        "cover": {
+          "filename": "6090b67c-ad9f-4372-91e0-a940721256c6",
+          "thumbnail": "https://cover.imglib.info/uploads/team/33294/cover/6090b67c-ad9f-4372-91e0-a940721256c6_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/33294/cover/6090b67c-ad9f-4372-91e0-a940721256c6.jpg",
+          "md": "https://cover.imglib.info/uploads/team/33294/cover/6090b67c-ad9f-4372-91e0-a940721256c6.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 37228,
+        "slug": "aniboom",
+        "slug_url": "37228--aniboom",
+        "model": "team",
+        "name": "AniBoom",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 38536,
+        "slug": "head-pack-films",
+        "slug_url": "38536--head-pack-films",
+        "model": "team",
+        "name": "Head Pack Films",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 39185,
+        "slug": "fronda-studio",
+        "slug_url": "39185--fronda-studio",
+        "model": "team",
+        "name": "Fronda Studio",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 39619,
+        "slug": "occultclubjjk",
+        "slug_url": "39619--occultclubjjk",
+        "model": "team",
+        "name": "Оккультный клуб | Магическая Битва",
+        "cover": {
+          "filename": "lrjoht3IEWoZ",
+          "thumbnail": "https://cover.imglib.info/uploads/team/occultclubjjk/cover/lrjoht3IEWoZ_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/occultclubjjk/cover/lrjoht3IEWoZ_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/occultclubjjk/cover/lrjoht3IEWoZ_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 1,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 40150,
+        "slug": "onedub",
+        "slug_url": "40150--onedub",
+        "model": "team",
+        "name": "OneDub",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 42411,
+        "slug": "anidub-online",
+        "slug_url": "42411--anidub-online",
+        "model": "team",
+        "name": "AniDub Online",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 42417,
+        "slug": "dejzdub",
+        "slug_url": "42417--dejzdub",
+        "model": "team",
+        "name": "DejzDub",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 42552,
+        "slug": "wisteriastudio",
+        "slug_url": "42552--wisteriastudio",
+        "model": "team",
+        "name": "Вистерия",
+        "cover": {
+          "filename": "K7dA0fnLXigJ",
+          "thumbnail": "https://cover.imglib.info/uploads/team/wisteriastudio/cover/K7dA0fnLXigJ_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/wisteriastudio/cover/K7dA0fnLXigJ_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/wisteriastudio/cover/K7dA0fnLXigJ_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 42573,
+        "slug": "kladbishhe-topovyx-relizov",
+        "slug_url": "42573--kladbishhe-topovyx-relizov",
+        "model": "team",
+        "name": "Кладбище топовых релизов",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 42804,
+        "slug": "aniclub",
+        "slug_url": "42804--aniclub",
+        "model": "team",
+        "name": "AniClub",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 44677,
+        "slug": "lazdub",
+        "slug_url": "44677--lazdub",
+        "model": "team",
+        "name": "LazDub",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 44739,
+        "slug": "lda-team",
+        "slug_url": "44739--lda-team",
+        "model": "team",
+        "name": "LDA TEAM",
+        "cover": {
+          "filename": "jEhp4XxI1DOV",
+          "thumbnail": "https://cover.imglib.info/uploads/team/lda-team/cover/jEhp4XxI1DOV_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/lda-team/cover/jEhp4XxI1DOV_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/lda-team/cover/jEhp4XxI1DOV_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 45046,
+        "slug": "chilldub",
+        "slug_url": "45046--chilldub",
+        "model": "team",
+        "name": "ChillDub",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 45051,
+        "slug": "dm-project",
+        "slug_url": "45051--dm-project",
+        "model": "team",
+        "name": "DM Project",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 45212,
+        "slug": "aerochannelekat-risha",
+        "slug_url": "45212--aerochannelekat-risha",
+        "model": "team",
+        "name": "AEROChannelEkat & Risha",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 45220,
+        "slug": "anibaza",
+        "slug_url": "45220--anibaza",
+        "model": "team",
+        "name": "AniBaza",
+        "cover": {
+          "filename": "H6jT9BGi4K9o",
+          "thumbnail": "https://cover.imglib.info/uploads/team/anibaza/cover/H6jT9BGi4K9o_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/anibaza/cover/H6jT9BGi4K9o_250x350.jpg",
+          "md": "https://cover.imglib.info/uploads/team/anibaza/cover/H6jT9BGi4K9o_250x350.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 45429,
+        "slug": "grickvoice",
+        "slug_url": "45429--grickvoice",
+        "model": "team",
+        "name": "GrickVoice",
+        "cover": {
+          "filename": "d4436668-c518-401e-b760-6351a20e01ca",
+          "thumbnail": "https://cover.imglib.info/uploads/team/45429/cover/d4436668-c518-401e-b760-6351a20e01ca_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/45429/cover/d4436668-c518-401e-b760-6351a20e01ca.jpg",
+          "md": "https://cover.imglib.info/uploads/team/45429/cover/d4436668-c518-401e-b760-6351a20e01ca.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 45498,
+        "slug": "dobrovoice",
+        "slug_url": "45498--dobrovoice",
+        "model": "team",
+        "name": "DOBROVOICE",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 45589,
+        "slug": "subvost",
+        "slug_url": "45589--subvost",
+        "model": "team",
+        "name": "SubVost",
+        "cover": {
+          "filename": "bc92dc80-3466-4f47-a552-0434aea9cbcc",
+          "thumbnail": "https://cover.imglib.info/uploads/team/45589/cover/bc92dc80-3466-4f47-a552-0434aea9cbcc_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/45589/cover/bc92dc80-3466-4f47-a552-0434aea9cbcc.jpg",
+          "md": "https://cover.imglib.info/uploads/team/45589/cover/bc92dc80-3466-4f47-a552-0434aea9cbcc.jpg"
+        },
+        "details": {
+          "branch_id": 1,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 47379,
+        "slug": "dik-pravilnaya-ozvucka",
+        "slug_url": "47379--dik-pravilnaya-ozvucka",
+        "model": "team",
+        "name": "ДИК - Правильная озвучка",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 47904,
+        "slug": "dar-sudby",
+        "slug_url": "47904--dar-sudby",
+        "model": "team",
+        "name": "Дар Судьбы",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 48103,
+        "slug": "panoptikum",
+        "slug_url": "48103--panoptikum",
+        "model": "team",
+        "name": "Паноптикум",
+        "cover": {
+          "filename": "c9ac2673-c1c8-444f-a6ac-7a834b6326d5",
+          "thumbnail": "https://cover.imglib.info/uploads/team/48103/cover/c9ac2673-c1c8-444f-a6ac-7a834b6326d5_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/48103/cover/c9ac2673-c1c8-444f-a6ac-7a834b6326d5.jpg",
+          "md": "https://cover.imglib.info/uploads/team/48103/cover/c9ac2673-c1c8-444f-a6ac-7a834b6326d5.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 48295,
+        "slug": "panoptikum",
+        "slug_url": "48295--panoptikum",
+        "model": "team",
+        "name": "Паноптикум",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 49181,
+        "slug": "anibar-studiinet",
+        "slug_url": "49181--anibar-studiinet",
+        "model": "team",
+        "name": "AniBar & Studiinet",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 49671,
+        "slug": "anicrystal",
+        "slug_url": "49671--anicrystal",
+        "model": "team",
+        "name": "AniCrystal",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 50292,
+        "slug": "digga-dubbing",
+        "slug_url": "50292--digga-dubbing",
+        "model": "team",
+        "name": "Digga Dubbing",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 50536,
+        "slug": "vdub",
+        "slug_url": "50536--vdub",
+        "model": "team",
+        "name": "VDub",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 54710,
+        "slug": "animovie",
+        "slug_url": "54710--animovie",
+        "model": "team",
+        "name": "AniMovie",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 55185,
+        "slug": "seiu-club",
+        "slug_url": "55185--seiu-club",
+        "model": "team",
+        "name": "SEIU CLUB",
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      },
+      {
+        "id": 58849,
+        "slug": "dubliaz-ord-studio-4k",
+        "slug_url": "58849--dubliaz-ord-studio-4k",
+        "model": "team",
+        "name": "Дубляж ORD Studio [4K]",
+        "cover": {
+          "filename": "d121e376-d1fa-4659-8a85-e9e4d74563ec",
+          "thumbnail": "https://cover.imglib.info/uploads/team/58849/cover/d121e376-d1fa-4659-8a85-e9e4d74563ec_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/team/58849/cover/d121e376-d1fa-4659-8a85-e9e4d74563ec.jpg",
+          "md": "https://cover.imglib.info/uploads/team/58849/cover/d121e376-d1fa-4659-8a85-e9e4d74563ec.jpg"
+        },
+        "details": {
+          "branch_id": 2,
+          "is_active": 0,
+          "subscriptions_count": null
+        },
+        "donate_enabled": null,
+        "open_chapter_with_content_key_enabled": null
+      }
+    ],
+    "genres": [
+      {
+        "id": 69,
+        "name": "Фэнтези",
+        "adult": false,
+        "alert": false
+      },
+      {
+        "id": 70,
+        "name": "Школа",
+        "adult": false,
+        "alert": false
+      }
+    ],
+    "tags": [
+      {
+        "id": 124,
+        "name": "Трагедия",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": true,
+        "is_general_spoiler": true
+      },
+      {
+        "id": 157,
+        "name": "Демоны",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 170,
+        "name": "Магия",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 295,
+        "name": "ГГ мужчина",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 307,
+        "name": "Гуро",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": true,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 387,
+        "name": "4к",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 402,
+        "name": "Ёкай",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 428,
+        "name": "Городская фэнтези",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 430,
+        "name": "Городской",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 457,
+        "name": "Суперсила",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 472,
+        "name": "Сёнэн",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 494,
+        "name": "В основном подростковый состав",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 526,
+        "name": "Боевые искусства",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 552,
+        "name": "Хэншин",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 583,
+        "name": "Ансамбль персонажей",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 634,
+        "name": "Плеер AnimeLIB",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 635,
+        "name": "Субтитры",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 641,
+        "name": "Body Horror",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 645,
+        "name": "Curses",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      },
+      {
+        "id": 655,
+        "name": "Exorcism",
+        "adult": false,
+        "alert": false,
+        "is_media_spoiler": false,
+        "is_general_spoiler": false
+      }
+    ],
+    "publisher": [
+      {
+        "id": 5980,
+        "slug": "mappa",
+        "slug_url": "5980--mappa",
+        "model": "publisher",
+        "name": "MAPPA",
+        "rus_name": null,
+        "cover": {
+          "filename": null,
+          "thumbnail": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "default": "https://cover.imglib.info/static/images/placeholders/user_avatar.png",
+          "md": "https://cover.imglib.info/static/images/placeholders/user_avatar.png"
+        },
+        "subscription": {
+          "is_subscribed": false,
+          "source_type": "publisher",
+          "source_id": 5980,
+          "relation": null
+        }
+      }
+    ],
+    "franchise": [],
+    "authors": [
+      {
+        "id": 92266,
+        "slug": "gege-akutami",
+        "slug_url": "92266--gege-akutami",
+        "model": "people",
+        "name": "Gege Akutami",
+        "rus_name": null,
+        "alt_name": null,
+        "cover": {
+          "filename": "854b1c33-e86c-4b44-91bd-dececaa92037",
+          "thumbnail": "https://cover.imglib.info/uploads/people/92266/cover/854b1c33-e86c-4b44-91bd-dececaa92037_thumb.jpg",
+          "default": "https://cover.imglib.info/uploads/people/92266/cover/854b1c33-e86c-4b44-91bd-dececaa92037.jpg",
+          "md": "https://cover.imglib.info/uploads/people/92266/cover/854b1c33-e86c-4b44-91bd-dececaa92037.jpg"
+        },
+        "subscription": {
+          "is_subscribed": false,
+          "source_type": "people",
+          "source_id": 92266,
+          "relation": null
+        },
+        "confirmed": null,
+        "user_id": 1
+      }
+    ],
+    "content_marking": [],
+    "status": {
+      "id": 2,
+      "label": "Завершён"
+    },
+    "time": {
+      "value": 23,
+      "formated": "23 мин."
+    },
+    "items_count": {
+      "uploaded": 23,
+      "total": 23
+    },
+    "episodes_schedule": [],
+    "releaseDateString": "06 июля 2023 г.",
+    "shikimori_href": "https://shiki.one/animes/51009",
+    "anilist_id": 145064,
+    "anilist_href": "https://anilist.co/anime/145064",
+    "shiki_rate": 8.72
+  },
+  "meta": {
+    "country": "RU"
+  }
+}
