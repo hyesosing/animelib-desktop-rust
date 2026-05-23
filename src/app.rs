@@ -84,15 +84,15 @@ impl eframe::App for AnimeLibApp {
                         let parent = win32.hwnd.get() as isize;
                         self.hwnd = Some(parent);
                         
-                        use windows_sys::Win32::UI::WindowsAndMessaging::{CreateWindowExW, WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, WS_CLIPSIBLINGS};
+                        use windows_sys::Win32::UI::WindowsAndMessaging::{CreateWindowExW, WS_CHILD, WS_CLIPCHILDREN, WS_CLIPSIBLINGS};
                         let class_name: Vec<u16> = "STATIC\0".encode_utf16().collect();
                         unsafe {
                             let child = CreateWindowExW(
                                 0,
                                 class_name.as_ptr(),
                                 std::ptr::null(),
-                                WS_CHILD | WS_VISIBLE | WS_CLIPCHILDREN | WS_CLIPSIBLINGS,
-                                0, 0, 800, 600, // Will be resized later
+                                WS_CHILD | WS_CLIPCHILDREN | WS_CLIPSIBLINGS,
+                                0, 0, 0, 0, // Starts hidden with zero size
                                 parent as _,
                                 std::ptr::null_mut(),
                                 std::ptr::null_mut(),

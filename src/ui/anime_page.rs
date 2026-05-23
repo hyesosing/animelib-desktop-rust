@@ -77,7 +77,12 @@ impl AnimePageScreen {
         if let Ok(mut lock) = self.player_process.lock() {
             if let Some(mut child) = lock.take() {
                 if let Ok(Some(_status)) = child.try_wait() {
-                    // process ended
+                    // process ended naturally
+                    #[cfg(target_os = "windows")]
+                    if let Some(h) = hwnd {
+                        use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_HIDE};
+                        unsafe { ShowWindow(h as _, SW_HIDE); }
+                    }
                 } else {
                     // process still running
                     is_playing = true;
