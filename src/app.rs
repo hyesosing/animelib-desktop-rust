@@ -19,6 +19,7 @@ pub enum NavAction {
 }
 
 pub struct AnimeLibApp {
+    pub hwnd: Option<isize>,
     rt: Arc<Runtime>,
     api_client: Arc<ApiClient>,
     image_cache: Arc<Mutex<ImageCache>>,
@@ -37,6 +38,7 @@ impl AnimeLibApp {
         let image_cache = Arc::new(Mutex::new(ImageCache::new()));
 
         Self {
+            hwnd: None,
             rt,
             api_client,
             image_cache,
@@ -71,6 +73,18 @@ impl AnimeLibApp {
 
 impl eframe::App for AnimeLibApp {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        if self.hwnd.is_none() {
+            #[cfg(target_os = "windows")]
+            {
+                use raw_window_handle::{HasWindowHandle, RawWindowHandle};
+                if let Ok(handle) = _frame.window_handle() {
+                    if let RawWindowHandle::Win32(win32) = handle.as_raw() {
+                        self.hwnd = Some(win32.hwnd.get() as isize);
+                    }
+                }
+            }
+        }
+
         let mut nav_action = NavAction::None;
 
         egui::TopBottomPanel::top("top_panel").show(ctx, |ui| {
@@ -115,6 +129,7 @@ impl eframe::App for AnimeLibApp {
                             self.image_cache.clone(),
                             &mut nav_action,
                             self.rt.clone(),
+                            self.hwnd,
                         );
                     }
                 }

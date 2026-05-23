@@ -1,7 +1,7 @@
 // src/ui/player_launcher.rs
 use std::process::Command;
 
-pub fn launch_mpv(url: &str, fallback_site_url: &str) {
+pub fn launch_mpv(url: &str, fallback_site_url: &str, hwnd: Option<isize>) -> Option<std::process::Child> {
     let fixed_url = if url.starts_with("//") {
         format!("https:{}", url)
     } else {
@@ -19,7 +19,7 @@ pub fn launch_mpv(url: &str, fallback_site_url: &str) {
         #[cfg(target_os = "macos")]
         let _ = Command::new("open").arg(fallback_site_url).spawn();
         
-        return;
+        return None;
     }
 
     let paths = vec![
@@ -29,17 +29,24 @@ pub fn launch_mpv(url: &str, fallback_site_url: &str) {
         "C:\\ProgramData\\scoop\\apps\\mpv\\current\\mpv.exe",
     ];
     
-    let mut success = false;
     for path in paths {
-        let result = Command::new(path)
-            .arg(&fixed_url)
-            .spawn();
+        let mut cmd = Command::new(path);
+        cmd.arg(&fixed_url);
+        
+        if let Some(h) = hwnd {
+            cmd.arg(format!("--wid={}", h));
+            cmd.arg("--force-window=immediate");
+            // Also it's often good to set no window border and auto-fit if embedded
+            cmd.arg("--no-border");
+            cmd.arg("--keep-open=yes"); // keep player open after video ends
+        }
+
+        let result = cmd.spawn();
 
         match result {
-            Ok(_) => {
+            Ok(child) => {
                 log::info!("Launched mpv using path '{}' for URL: {}", path, url);
-                success = true;
-                break;
+                return Some(child);
             }
             Err(e) => {
                 if e.kind() != std::io::ErrorKind::NotFound {
@@ -49,7 +56,6 @@ pub fn launch_mpv(url: &str, fallback_site_url: &str) {
         }
     }
 
-    if !success {
-        log::error!("Failed to launch mpv: program not found. Make sure mpv is installed and in your PATH.");
-    }
+    log::error!("Failed to launch mpv: program not found. Make sure mpv is installed and in your PATH.");
+    None
 }

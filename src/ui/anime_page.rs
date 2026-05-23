@@ -19,6 +19,7 @@ pub struct AnimePageScreen {
     error_msg: Option<String>,
     rx_players: Option<mpsc::Receiver<(usize, anyhow::Result<Vec<crate::api::models::Player>>)>>,
     loading_players_for: Option<usize>,
+    player_process: Arc<Mutex<Option<std::process::Child>>>,
 }
 
 fn extract_summary(val: &serde_json::Value) -> String {
@@ -59,6 +60,7 @@ impl AnimePageScreen {
             error_msg: None,
             rx_players: None,
             loading_players_for: None,
+            player_process: Arc::new(Mutex::new(None)),
         }
     }
 
@@ -69,8 +71,41 @@ impl AnimePageScreen {
         image_cache: Arc<Mutex<ImageCache>>,
         _nav: &mut NavAction,
         rt: Arc<Runtime>,
+        hwnd: Option<isize>,
     ) {
-    if self.rx_detail.is_none() && self.detail.is_none() && self.error_msg.is_none() {
+        let mut is_playing = false;
+        if let Ok(mut lock) = self.player_process.lock() {
+            if let Some(mut child) = lock.take() {
+                if let Ok(Some(_status)) = child.try_wait() {
+                    // process ended
+                } else {
+                    // process still running
+                    is_playing = true;
+                    *lock = Some(child);
+                }
+            }
+        }
+        
+        if is_playing {
+            ui.centered_and_justified(|ui| {
+                ui.vertical_centered(|ui| {
+                    ui.add_space(50.0);
+                    ui.heading("Плеер запущен");
+                    ui.add_space(20.0);
+                    if ui.button("Остановить видео").clicked() {
+                        if let Ok(mut lock) = self.player_process.lock() {
+                            if let Some(mut child) = lock.take() {
+                                let _ = child.kill();
+                                let _ = child.wait();
+                            }
+                        }
+                    }
+                });
+            });
+            return;
+        }
+
+        if self.rx_detail.is_none() && self.detail.is_none() && self.error_msg.is_none() {
             let (tx1, rx1) = mpsc::channel();
             self.rx_detail = Some(rx1);
             let slug = self.slug.clone();
@@ -229,6 +264,7 @@ impl AnimePageScreen {
                                                         let src_clone = src.clone();
                                                         let fallback_url = format!("https://v5.animelib.org/anime/{}", self.slug);
                                                         let client_clone = client.clone();
+                                                        let process_lock = self.player_process.clone();
                                                         rt.spawn(async move {
                                                             let final_url = if src_clone.contains("kodikplayer.com") {
                                                                 match client_clone.extract_kodik_link(&src_clone).await {
@@ -241,7 +277,12 @@ impl AnimePageScreen {
                                                             } else {
                                                                 src_clone
                                                             };
-                                                            crate::ui::player_launcher::launch_mpv(&final_url, &fallback_url);
+                                                            let child = crate::ui::player_launcher::launch_mpv(&final_url, &fallback_url, hwnd);
+                                                            if let Some(c) = child {
+                                                                if let Ok(mut lock) = process_lock.lock() {
+                                                                    *lock = Some(c);
+                                                                }
+                                                            }
                                                         });
                                                     }
                                                 }
