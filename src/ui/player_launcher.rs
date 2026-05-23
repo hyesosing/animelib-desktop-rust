@@ -57,6 +57,7 @@ pub fn launch_mpv(url: &str, fallback_site_url: &str, hwnd: Option<isize>) -> Op
             // Allow input explicitly (some MPV versions need this when embedded)
             cmd.arg("--input-default-bindings=yes");
             cmd.arg("--input-vo-keyboard=yes");
+            cmd.arg("--input-cursor=yes");
         }
 
         let result = cmd.spawn();
