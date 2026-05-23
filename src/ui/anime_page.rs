@@ -122,10 +122,17 @@ impl AnimePageScreen {
                     }));
                 }
                 
-                if response.clicked() {
-                    crate::ui::player_launcher::send_mpv_command(h, serde_json::json!({
-                        "command": ["keydown", "MBTN_LEFT"]
-                    }));
+                // Track proper down/up events for dragging and sliders in ModernX
+                if response.hovered() {
+                    if ui.input(|i| i.pointer.button_pressed(egui::PointerButton::Primary)) {
+                        crate::ui::player_launcher::send_mpv_command(h, serde_json::json!({
+                            "command": ["keydown", "MBTN_LEFT"]
+                        }));
+                    }
+                }
+                
+                // Always release if it was released this frame, to prevent stuck buttons
+                if ui.input(|i| i.pointer.button_released(egui::PointerButton::Primary)) {
                     crate::ui::player_launcher::send_mpv_command(h, serde_json::json!({
                         "command": ["keyup", "MBTN_LEFT"]
                     }));
