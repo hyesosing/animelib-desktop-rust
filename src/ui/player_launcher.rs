@@ -57,7 +57,9 @@ pub fn launch_mpv(url: &str, fallback_site_url: &str, hwnd: Option<isize>) -> Op
             // Allow input explicitly (some MPV versions need this when embedded)
             cmd.arg("--input-default-bindings=yes");
             cmd.arg("--input-vo-keyboard=yes");
-            cmd.arg("--input-cursor=yes");
+            
+            // Enable IPC so we can forward mouse events
+            cmd.arg(format!("--input-ipc-server=\\\\.\\pipe\\animelib_mpv_{}", h));
         }
 
         let result = cmd.spawn();
@@ -67,14 +69,20 @@ pub fn launch_mpv(url: &str, fallback_site_url: &str, hwnd: Option<isize>) -> Op
                 log::info!("Launched mpv using path '{}' for URL: {}", path, url);
                 return Some(child);
             }
-            Err(e) => {
-                if e.kind() != std::io::ErrorKind::NotFound {
-                    log::error!("Failed to launch mpv at {}: {}", path, e);
-                }
-            }
+            Err(_) => continue,
         }
     }
 
-    log::error!("Failed to launch mpv: program not found. Make sure mpv is installed and in your PATH.");
+    log::error!("Failed to launch mpv player from any known path");
     None
+}
+
+pub fn send_mpv_command(hwnd: isize, command: serde_json::Value) {
+    let pipe_name = format!("\\\\.\\pipe\\animelib_mpv_{}", hwnd);
+    if let Ok(mut file) = std::fs::OpenOptions::new().write(true).open(pipe_name) {
+        use std::io::Write;
+        let mut json = command.to_string();
+        json.push('\n');
+        let _ = file.write_all(json.as_bytes());
+    }
 }

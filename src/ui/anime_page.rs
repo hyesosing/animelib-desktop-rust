@@ -93,7 +93,7 @@ impl AnimePageScreen {
         
         if is_playing {
             let available_rect = ui.available_rect_before_wrap();
-            let response = ui.allocate_rect(available_rect, egui::Sense::hover());
+            let response = ui.allocate_rect(available_rect, egui::Sense::click_and_drag());
             let rect = response.rect;
             
             if let Some(h) = hwnd {
@@ -111,6 +111,24 @@ impl AnimePageScreen {
                             SWP_NOZORDER | SWP_SHOWWINDOW,
                         );
                     }
+                }
+                
+                // Forward mouse events to MPV via IPC
+                if let Some(hover_pos) = response.hover_pos() {
+                    let x = hover_pos.x - rect.min.x;
+                    let y = hover_pos.y - rect.min.y;
+                    crate::ui::player_launcher::send_mpv_command(h, serde_json::json!({
+                        "command": ["mouse", x as i32, y as i32]
+                    }));
+                }
+                
+                if response.clicked() {
+                    crate::ui::player_launcher::send_mpv_command(h, serde_json::json!({
+                        "command": ["keydown", "MBTN_LEFT"]
+                    }));
+                    crate::ui::player_launcher::send_mpv_command(h, serde_json::json!({
+                        "command": ["keyup", "MBTN_LEFT"]
+                    }));
                 }
             }
 

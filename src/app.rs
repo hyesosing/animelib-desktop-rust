@@ -84,33 +84,9 @@ impl eframe::App for AnimeLibApp {
                         let parent = win32.hwnd.get() as isize;
                         self.hwnd = Some(parent);
                         
-                        use windows_sys::Win32::System::LibraryLoader::GetModuleHandleW;
-                        use windows_sys::Win32::UI::WindowsAndMessaging::{
-                            RegisterClassExW, CreateWindowExW, DefWindowProcW, WNDCLASSEXW,
-                            WS_CHILD, WS_CLIPCHILDREN, WS_CLIPSIBLINGS, CS_HREDRAW, CS_VREDRAW
-                        };
-                        
-                        let class_name: Vec<u16> = "AnimeLibMpvChild\0".encode_utf16().collect();
+                        use windows_sys::Win32::UI::WindowsAndMessaging::{CreateWindowExW, WS_CHILD, WS_CLIPCHILDREN, WS_CLIPSIBLINGS};
+                        let class_name: Vec<u16> = "STATIC\0".encode_utf16().collect();
                         unsafe {
-                            let h_instance = GetModuleHandleW(std::ptr::null());
-                            
-                            let wc = WNDCLASSEXW {
-                                cbSize: std::mem::size_of::<WNDCLASSEXW>() as u32,
-                                style: CS_HREDRAW | CS_VREDRAW,
-                                lpfnWndProc: Some(DefWindowProcW),
-                                cbClsExtra: 0,
-                                cbWndExtra: 0,
-                                hInstance: h_instance,
-                                hIcon: std::ptr::null_mut(),
-                                hCursor: std::ptr::null_mut(),
-                                hbrBackground: std::ptr::null_mut(), // Transparent background
-                                lpszMenuName: std::ptr::null(),
-                                lpszClassName: class_name.as_ptr(),
-                                hIconSm: std::ptr::null_mut(),
-                            };
-                            
-                            RegisterClassExW(&wc);
-                            
                             let child = CreateWindowExW(
                                 0,
                                 class_name.as_ptr(),
@@ -119,7 +95,7 @@ impl eframe::App for AnimeLibApp {
                                 0, 0, 0, 0, // Starts hidden with zero size
                                 parent as _,
                                 std::ptr::null_mut(),
-                                h_instance,
+                                std::ptr::null_mut(),
                                 std::ptr::null_mut(),
                             );
                             self.child_hwnd = Some(child as isize);
