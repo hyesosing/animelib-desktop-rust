@@ -8,6 +8,7 @@ pub struct ApiClient {
     #[allow(dead_code)]
     site_id: u32,
     client: Client,
+    pub auth_token: std::sync::Arc<std::sync::Mutex<Option<String>>>,
 }
 
 impl ApiClient {
@@ -40,7 +41,16 @@ impl ApiClient {
             base_url: "https://api.cdnlibs.org/api".to_string(),
             site_id: 5,
             client,
+            auth_token: std::sync::Arc::new(std::sync::Mutex::new(None)),
         }
+    }
+
+    fn get_request(&self, url: &str) -> reqwest::RequestBuilder {
+        let mut req = self.client.get(url);
+        if let Some(token_raw) = self.auth_token.lock().unwrap().as_ref() {
+            req = req.header(reqwest::header::AUTHORIZATION, format!("Bearer {}", token_raw.trim_matches('"')));
+        }
+        req
     }
 
     pub async fn get_catalog(
@@ -57,7 +67,7 @@ impl ApiClient {
         }
 
         let url = endpoints::build_url(&self.base_url, endpoints::CATALOG, &params);
-        let resp = self.client.get(&url).send().await?;
+        let resp = self.get_request(&url).send().await?;
 
         if !resp.status().is_success() {
             anyhow::bail!("HTTP Error: {}", resp.status());
@@ -88,7 +98,7 @@ impl ApiClient {
             params.push(("fields[]", f));
         }
         let url = endpoints::build_url(&self.base_url, &path, &params);
-        let resp = self.client.get(&url).send().await?;
+        let resp = self.get_request(&url).send().await?;
 
         if !resp.status().is_success() {
             anyhow::bail!("HTTP Error: {}", resp.status());
@@ -119,7 +129,7 @@ impl ApiClient {
 
     pub async fn get_episode_players(&self, ep_id: u64) -> anyhow::Result<Vec<Player>> {
         let url = format!("{}/episodes/{}", self.base_url, ep_id);
-        let resp = self.client.get(&url).send().await?;
+        let resp = self.get_request(&url).send().await?;
         let text = resp.text().await?;
         let data = serde_json::from_str::<serde_json::Value>(&text)?;
         if let Some(players) = data.get("data").and_then(|d| d.get("players")) {

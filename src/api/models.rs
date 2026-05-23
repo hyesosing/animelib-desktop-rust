@@ -115,3 +115,16 @@ pub struct TeamInfo {
     pub id: u32,
     pub name: String,
 }
+
+#[derive(Debug, Deserialize, Clone)]
+pub struct HomeDataResponse {
+    pub data: HomeData,
+}
+
+#[derive(Debug, Deserialize, Clone)]
+pub struct HomeData {
+    pub latest_updates: Option<Vec<AnimeItem>>,
+    pub popular: Option<Vec<AnimeItem>>,
+    pub slider: Option<Vec<AnimeItem>>,
+    pub newest: Option<Vec<AnimeItem>>,
+}
