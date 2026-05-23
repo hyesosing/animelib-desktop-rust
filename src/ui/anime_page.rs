@@ -22,6 +22,16 @@ pub struct AnimePageScreen {
     player_process: Arc<Mutex<Option<std::process::Child>>>,
 }
 
+impl Drop for AnimePageScreen {
+    fn drop(&mut self) {
+        if let Ok(mut lock) = self.player_process.lock() {
+            if let Some(mut child) = lock.take() {
+                let _ = child.kill();
+            }
+        }
+    }
+}
+
 fn extract_summary(val: &serde_json::Value) -> String {
     if let Some(content) = val.get("content").and_then(|c| c.as_array()) {
         let mut res = String::new();

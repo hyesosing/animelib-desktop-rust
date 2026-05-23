@@ -61,12 +61,28 @@ impl AnimeLibApp {
             NavAction::GoTo(screen) => {
                 if let Screen::AnimePage(ref slug) = screen {
                     self.anime_page_screen = Some(AnimePageScreen::new(slug.clone()));
+                } else if let Screen::Catalog = screen {
+                    self.anime_page_screen = None;
+                    #[cfg(target_os = "windows")]
+                    if let Some(h) = self.child_hwnd {
+                        use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_HIDE};
+                        unsafe { ShowWindow(h as _, SW_HIDE); }
+                    }
                 }
                 self.screen_stack.push(screen);
             }
             NavAction::GoBack => {
                 if self.screen_stack.len() > 1 {
                     self.screen_stack.pop();
+                    
+                    if let Screen::Catalog = self.current_screen() {
+                        self.anime_page_screen = None;
+                        #[cfg(target_os = "windows")]
+                        if let Some(h) = self.child_hwnd {
+                            use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_HIDE};
+                            unsafe { ShowWindow(h as _, SW_HIDE); }
+                        }
+                    }
                 }
             }
         }
