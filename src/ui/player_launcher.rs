@@ -42,6 +42,10 @@ pub fn launch_mpv(url: &str, fallback_site_url: &str, hwnd: Option<isize>) -> Op
             
             // Apply ModernX UI skin
             cmd.arg("--osc=no"); // Disable default OSC
+            
+            // Disable window controls in ModernX since we have our own UI
+            cmd.arg("--script-opts=modernx-windowcontrols=no");
+            
             if let Ok(cwd) = std::env::current_dir() {
                 let assets_dir = cwd.join("assets");
                 cmd.arg(format!("--config-dir={}", assets_dir.display()));
